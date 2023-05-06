@@ -38,7 +38,7 @@ Jayasiamman Prabakaran
 - Jaic: Coding, helped Vishwa build the Robo.
 
 ## YouTube account details
--https://www.youtube.com/@TeamNumeric
+- https://www.youtube.com/@TeamNumeric
 
 ## Timeline
 - 11-03-23: Vishwanath and Jaic were building the robo.
