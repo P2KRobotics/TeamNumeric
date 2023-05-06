@@ -1,4 +1,19 @@
-# Robot Details
+# Team Numeric
+
+Members:
+Atish Patange (coach)
+
+Vishwanath Suresh
+
+Sai Chintakula 
+
+Jayasiamman Prabakaran
+         
+         
+         
+         
+
+## Robot Details
 ## Hardware Specifications Descriptions
 - Fischertechnik Robotics TXT 4.0 Base Set & Robotics Add On: Autonomus Driving.
 - Coding Software: ROBO Pro Coding Software
@@ -23,7 +38,7 @@
 - Jaic: Coding, helped Vishwa build the Robo.
 
 ## YouTube account details
-- URL for account
+-https://www.youtube.com/@TeamNumeric
 
 ## Timeline
 - 11-03-23: Vishwanath and Jaic were building the robo.
@@ -35,7 +50,8 @@
 - 22-04-23: All were working on the source code for qualification round and finshed the sonar senser code.
 - 29-40-23: All were working on the source code for qualification round.
 - 06-05-2023: Jaic worte the source code for qualification round.
-              Vishwanath worte the wiki
-              Sai took the photos and videos
+              Vishwanath worte the wiki,created the youtube Channel
+              Sai took the photos and videos,created the youtube Channel
+              
 
 
