@@ -49,7 +49,12 @@ Jayasiamman Prabakaran
 - 06-05-2023: Jaic worte the source code for qualification round.
               Vishwanath worte the wiki,created the youtube Channel
               Sai took the photos and videos,created the youtube Channel
-        
+              
+              
+ 
+ 
+ 
+ 
 # Our Plans
 
 ## Qualification Round
