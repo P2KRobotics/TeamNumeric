@@ -3,7 +3,7 @@
 Members:
 Atish Patange (coach)
 
-Vishwanath Suresh
+Vishwanath Suresh Kumar
 
 Sai Chintakula 
 
@@ -33,9 +33,9 @@ Jayasiamman Prabakaran
 - If we wanted to sense green then G_Value-(R_Value+B_Value)>Treshold
 
 ## Team management
-- Vishwa: Coding, worte this wiki,build the Robo
-- Sai: Coding, took and edited the videos and photos
-- Jaic: Coding, helped Vishwa build the Robo.
+- Vishwanath Suresh Kumar: Coding, worte this wiki,build the Robo
+- Sai Chintakula: Coding, took and edited the videos and photos
+- Jayasiamman Prabakaran: Coding, helped Vishwa build the Robo.
 
 ## YouTube account details
 - https://www.youtube.com/@TeamNumeric
