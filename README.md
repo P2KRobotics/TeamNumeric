@@ -24,10 +24,6 @@ Jayasiamman Prabakaran
 - Sonar sensors to aviod hiting the wall and for precise angles with help of the walls and distane reading.
 
 ## Camera and Image Processing
-ToDo: Image processing algorithm for detecting color
-         - Image resolution
-         - 
-ToDO: Take screenshot of fischer technik software and paster it -> image processing module. Explain how you are using this software to get threshold values
 
 ## Sonar sensor
 ToDo: How sonar sensor works
@@ -67,17 +63,21 @@ ToDo: Compile and Upload, what is the difference
 - https://www.youtube.com/@TeamNumeric
 
 ## Timeline
-- 11-03-23: Vishwanath and Jaic were building the robo.
+- 11-03-23: Vishwanath and Jayasimman were building the robo.
 - 18-03-23: All were working on the movement code.
 - 25-03-23: All were working on the movement code and finshed it.
 - 01-04-23: All were working on the camera.
 - 08-04-23: All were working on the camera code and finshed it.
 - 15-04-23: All were working on the sonar senser code.
 - 22-04-23: All were working on the source code for qualification round and finshed the sonar senser code.
-- 29-40-23: All were working on the source code for qualification round.
-- 06-05-2023: Jaic worte the source code for qualification round.
+- 29-04-23: All were working on the source code for qualification round.
+- 06-05-2023: Jayasimman worte the source code for qualification round.
               Vishwanath worte the wiki,created the youtube Channel
-              Sai took the photos and videos,created the youtube Channel
+              Sai took the photos and videos,created the youtube Channel.
+- 13-05-2023: Vishwa worte the source code for qualification round.
+- 18-05-2023: Vishwa updating the wiki. 
+              Jayasimman coding the qualification round.
+              Sai build the Taffic singnals.
               
               
  
