@@ -23,6 +23,30 @@ Jayasiamman Prabakaran
 - Camera to sense the red and green signals.
 - Sonar sensors to aviod hiting the wall and for precise angles with help of the walls and distane reading.
 
+## Camera and Image Processing
+ToDo: Image processing algorithm for detecting color
+         - Image resolution
+         - 
+ToDO: Take screenshot of fischer technik software and paster it -> image processing module. Explain how you are using this software to get threshold values
+
+## Sonar sensor
+ToDo: How sonar sensor works
+ToDo: For what purpose you are using it
+ToDo: What problems did you faced while using it
+
+## Algorithm progress
+ToDo: Speedometer
+         - We learned GUI fro microcontroller
+         - We created it for logging the information
+         - Put screenshot of it
+         - Graphical User Interface
+ToDo: How much distance robot moved
+
+## Topics learn in Robotics
+ToDo: Computer Vision
+ToDo: Sensor Fusion
+ToDo: Path Planning
+
 ## First programs
 - Camera sensing the red and green signals.
 - Our goal was to subtract the RGB values and if it is bigger the Treshold (50)
