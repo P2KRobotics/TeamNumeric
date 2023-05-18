@@ -1,4 +1,8 @@
 Electromechanical diagrams
 ====
 
-This directory must contain one or several schematic diagrams in form of JPEG, PNG or PDF of the electromechanical components illustrating all the elements (electronic components and motors) used in the vehicle and how they connect to each other.
+  Steering mechanism with 4 wheels
+-  Two wheels at the back connect with one Encoder motor (for forwards and backwards).
+ -  Two wheels at the front connect with the servo motor from Steering mechanism (for left and right turn).
+  -  Sonar Sensor 
+  
