@@ -47,6 +47,11 @@ ToDo: Computer Vision
 ToDo: Sensor Fusion
 ToDo: Path Planning
 
+## Build Process
+ToDo: Compile and Upload, what is the difference
+- How it works with Fischer Technik
+
+
 ## First programs
 - Camera sensing the red and green signals.
 - Our goal was to subtract the RGB values and if it is bigger the Treshold (50)
