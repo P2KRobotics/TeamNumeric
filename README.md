@@ -61,7 +61,7 @@ Solution:
 ## Team management
 - Sai Chintakula: Coding, building the Robo and editing the videos and photos
 - Jayasimman Prabakaran: Coding, helped Vishwa build the Robo
-- Vishwanath Suresh Kumar: Coding, wwiki,build the Robo
+- Vishwanath Suresh Kumar: Coding, wrote the wiki,build the Robo
 
 
 
@@ -87,6 +87,14 @@ Solution:
               Sai correcting the qualification code and build the traffic signals.
               Jayasimman starting the final round.
               
+  - 20-05-2023: Vishwanath updating the wiki,works on qualification round.
+                Jayasimman works on the qualification round. 
+                Sai updating the wiki,works on qualification round.
+                
+   - 20-05-2023: Vishwanath updating the wiki,works on qualification round.
+                Jayasimman works on the qualification round. 
+                Sai updating the wiki, works on qualification round.
+                All tried to solve the problem on qualification round
               
               
  
