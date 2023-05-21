@@ -1,0 +1,827 @@
+mport time
+
+from fischertechnik.controller.Motor import Motor
+from lib.controller import *
+
+
+Straight = None
+Turn_Left = None
+Speed = None
+DistanceWall = None
+
+
+def RealWait():
+    global Straight, Turn_Left, Speed, DistanceWall
+    TXT_M_M1_encodermotor.set_speed(int(0), Motor.CW)
+    TXT_M_M1_encodermotor.start_sync()
+    time.sleep(1)
+
+
+def my_90():
+    global Straight, Turn_Left, Speed, DistanceWall
+    TXT_M_S2_servomotor.set_position(int(Turn_Left))
+    for count2 in range(1):
+        TXT_M_M1_encodermotor.set_speed(int(500), Motor.CW)
+        TXT_M_M1_encodermotor.start_sync()
+        time.sleep(2.2)
+        TXT_M_M1_encodermotor.stop_sync()
+    TXT_M_S2_servomotor.set_position(int(Straight))
+
+
+def Path1():
+    global Straight, Turn_Left, Speed, DistanceWall
+    for count3 in range(1):
+        TXT_M_M1_encodermotor.set_speed(int(512), Motor.CW)
+        TXT_M_M1_encodermotor.start_sync()
+        time.sleep(3.6)
+        TXT_M_M1_encodermotor.stop_sync()
+
+
+def Path5():
+    global Straight, Turn_Left, Speed, DistanceWall
+    for count4 in range(1):
+        TXT_M_M1_encodermotor.set_speed(int(512), Motor.CW)
+        TXT_M_M1_encodermotor.start_sync()
+        time.sleep(3.9)
+        TXT_M_M1_encodermotor.stop_sync()
+
+
+def Path_2():
+    global Straight, Turn_Left, Speed, DistanceWall
+    for count5 in range(1):
+        TXT_M_M1_encodermotor.set_speed(int(512), Motor.CW)
+        TXT_M_M1_encodermotor.start_sync()
+        time.sleep(3.45)
+        TXT_M_M1_encodermotor.stop_sync()
+
+
+def Path6():
+    global Straight, Turn_Left, Speed, DistanceWall
+    for count6 in range(1):
+        TXT_M_M1_encodermotor.set_speed(int(512), Motor.CW)
+        TXT_M_M1_encodermotor.start_sync()
+        time.sleep(3.9)
+        TXT_M_M1_encodermotor.stop_sync()
+
+
+def Path_3():
+    global Straight, Turn_Left, Speed, DistanceWall
+    for count7 in range(1):
+        TXT_M_M1_encodermotor.set_speed(int(512), Motor.CW)
+        TXT_M_M1_encodermotor.start_sync()
+        time.sleep(5.2)
+        TXT_M_M1_encodermotor.stop_sync()
+
+
+def Path_4():
+    global Straight, Turn_Left, Speed, DistanceWall
+    for count8 in range(1):
+        TXT_M_M1_encodermotor.set_speed(int(512), Motor.CW)
+        TXT_M_M1_encodermotor.start_sync()
+        time.sleep(3.3)
+        TXT_M_M1_encodermotor.stop_sync()
+
+
+Straight = 160
+Turn_Left = 250
+Speed = 512
+DistanceWall = 80
+TXT_M_S2_servomotor.set_position(int(Straight))
+Path1()
+RealWait()
+my_90()
+Path_2()
+my_90()
+Path_3()
+my_90()
+Path_4()
+my_90()
+for count in range(1):
+    TXT_M_M1_encodermotor.set_speed(int(512), Motor.CW)
+    TXT_M_M1_encodermotor.start_sync()
+    time.sleep(1.3)
+    TXT_M_M1_encodermotor.stop_sync()
+
+
+
+def Path_4():
+    global Straight, Turn_Left, Speed, DistanceWall
+    for count8 in range(1):
+        TXT_M_M1_encodermotor.set_speed(int(512), Motor.CW)
+        TXT_M_M1_encodermotor.start_sync()
+        time.sleep(3.3)
+        TXT_M_M1_encodermotor.stop_sync()
+
+
+Straight = 160
+Turn_Left = 250
+Speed = 512
+DistanceWall = 80
+TXT_M_S2_servomotor.set_position(int(Straight))
+Path1()
+RealWait()
+my_90()
+Path_2()
+my_90()
+Path_3()
+my_90()
+Path_4()
+my_90()
+for count in range(1):
+    TXT_M_M1_encodermotor.set_speed(int(512), Motor.CW)
+    TXT_M_M1_encodermotor.start_sync()
+    time.sleep(1.3)
+    TXT_M_M1_encodermotor.stop_sync()
+PK
+     óYµVe‚éo  o     /qualification_round_t1.blockly<xml xmlns="https://developers.google.com/blockly/xml" version="14">
+  <variables>
+    <variable id="R+iyK`sQ^`*).plwEr*5">Straight</variable>
+    <variable id="@W`#[lPHY*bC$?VDHKkC">Turn Left</variable>
+    <variable id="O+?cHK(})@4Z3CP^yQ*W">Speed</variable>
+    <variable id="yym;LTQjXWd~sumkDPa#">DistanceWall</variable>
+  </variables>
+  <block type="start_block" id="nrr4H;,U|#duApWwW*NM" deletable="false" x="-1155" y="-540">
+    <statement name="statement">
+      <block type="variables_set" id="?.Br3+9`)jqkc3+;zpo,">
+        <field name="VAR" id="R+iyK`sQ^`*).plwEr*5">Straight</field>
+        <value name="VALUE">
+          <block type="math_number" id="N7efQ^!-9I;YZ,@]5w2K">
+            <field name="NUM">160</field>
+          </block>
+        </value>
+        <next>
+          <block type="variables_set" id="jjpMw)l3Z$y[QD6?N^}x">
+            <field name="VAR" id="@W`#[lPHY*bC$?VDHKkC">Turn Left</field>
+            <value name="VALUE">
+              <block type="math_number" id="d0I-A,cr`NEegQ?$ZyRH">
+                <field name="NUM">250</field>
+              </block>
+            </value>
+            <next>
+              <block type="variables_set" id="pcm],vghk,FsGPKM]Loq">
+                <field name="VAR" id="O+?cHK(})@4Z3CP^yQ*W">Speed</field>
+                <value name="VALUE">
+                  <block type="math_number" id="oL(v*Bq9|Tk%qTrW^b}]">
+                    <field name="NUM">512</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="variables_set" id="x7|F96M!%r+8Sq$U.c$v">
+                    <field name="VAR" id="yym;LTQjXWd~sumkDPa#">DistanceWall</field>
+                    <value name="VALUE">
+                      <block type="math_number" id="6xO;J-^5$9XZS`t9w)/O">
+                        <field name="NUM">80</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="servomotor_set_position" id=",$z=Xj7p*)O.PW[%Ru.;">
+                        <field name="instance_name">TXT_M_S2_servomotor</field>
+                        <value name="position">
+                          <shadow type="servomotor_number" id="bwF7lFftkCirtW5`P3$J">
+                            <field name="SERVOMOTOR_NUM">170</field>
+                          </shadow>
+                          <block type="variables_get" id="w`58UDOVvQw*mRrOSZ^P">
+                            <field name="VAR" id="R+iyK`sQ^`*).plwEr*5">Straight</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="procedures_callnoreturn" id="$-P.,*81_)=0(o~^kAEw">
+                            <mutation name="Path1"/>
+                            <next>
+                              <block type="procedures_callnoreturn" id="42ozbf7;83PmQ,T3L?l2">
+                                <mutation name="RealWait"/>
+                                <next>
+                                  <block type="procedures_callnoreturn" id="Q@aC_kH;(P:JJVc-gY+a">
+                                    <mutation name="90"/>
+                                    <next>
+                                      <block type="procedures_callnoreturn" id="m]81%s.Qf(}C!;9REIjF">
+                                        <mutation name="Path 2"/>
+                                        <next>
+                                          <block type="procedures_callnoreturn" id="4L3m5k{cQ$kG5m*c?ihs">
+                                            <mutation name="90"/>
+                                            <next>
+                                              <block type="procedures_callnoreturn" id="E`TdC1z#FrsDB}}1FY%F">
+                                                <mutation name="Path 3"/>
+                                                <next>
+                                                  <block type="procedures_callnoreturn" id="x@;O|^5-La_l:h^T*37{">
+                                                    <mutation name="90"/>
+                                                    <next>
+                                                      <block type="procedures_callnoreturn" id="O=]/sEvnEIi6h1^XHmsV">
+                                                        <mutation name="Path 4"/>
+                                                        <next>
+                                                          <block type="procedures_callnoreturn" id="`|FOY]/-/3Uq877+WOrR">
+                                                            <mutation name="90"/>
+                                                            <next>
+                                                              <block type="controls_repeat_ext" id="IT16rjR6cGmrn}Pz).X:">
+                                                                <value name="TIMES">
+                                                                  <shadow type="math_number" id="ufRv6f;HPomuiUm0Hkdj">
+                                                                    <field name="NUM">1</field>
+                                                                  </shadow>
+                                                                </value>
+                                                                <statement name="DO">
+                                                                  <block type="encodermotor_set_speed" id="5k5xorusqY~?G,kr.L=,">
+                                                                    <field name="instance_name_0">TXT_M_M1_encodermotor</field>
+                                                                    <field name="direction_0">Motor.CW</field>
+                                                                    <value name="speed">
+                                                                      <shadow type="motor_number" id=".}|3/3aYlh2iE:EiN(kE">
+                                                                        <field name="MOTOR_NUM">512</field>
+                                                                      </shadow>
+                                                                    </value>
+                                                                    <next>
+                                                                      <block type="util_wait_for" id="Af0r_O]v!AV*aS;G|[VN">
+                                                                        <field name="format">s</field>
+                                                                        <value name="value">
+                                                                          <shadow type="math_number" id="`~-X;=fd5FbPHi{Wt[rf">
+                                                                            <field name="NUM">1.3</field>
+                                                                          </shadow>
+                                                                        </value>
+                                                                        <next>
+                                                                          <block type="encodermotor_stop" id="tK]o4.2dfdXnA^,/O,nW">
+                                                                            <field name="instance_name_0">TXT_M_M1_encodermotor</field>
+                                                                          </block>
+                                                                        </next>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </statement>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="9c]3jBr;KeNX6$/)B[u7" x="-645" y="-493">
+    <field name="NAME">RealWait</field>
+    <statement name="STACK">
+      <block type="encodermotor_set_speed" id="9@(DP%^.BzzOx%C,sx8T">
+        <field name="instance_name_0">TXT_M_M1_encodermotor</field>
+        <field name="direction_0">Motor.CW</field>
+        <value name="speed">
+          <shadow type="motor_number" id=")WbvWEtjNWpi;ni!9]hV">
+            <field name="MOTOR_NUM">0</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="util_wait_for" id="#K5i,@DB:C!z57B2a({4">
+            <field name="format">s</field>
+            <value name="value">
+              <shadow type="math_number" id="W*a:*I-L,1_6:P31[lnU">
+                <field name="NUM">1</field>
+              </shadow>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="_a2xY#W^_0dPfkZ%F[b{" x="-644" y="-366">
+    <field name="NAME">90</field>
+    <statement name="STACK">
+      <block type="servomotor_set_position" id="?LFyk!QfVI.ra*S,=`8L">
+        <field name="instance_name">TXT_M_S2_servomotor</field>
+        <value name="position">
+          <shadow type="servomotor_number" id="6`Ivng$d7zGl6$G;F$PF">
+            <field name="SERVOMOTOR_NUM">250</field>
+          </shadow>
+          <block type="variables_get" id="}QVX)20TrozC`_{[IHWm">
+            <field name="VAR" id="@W`#[lPHY*bC$?VDHKkC">Turn Left</field>
+          </block>
+        </value>
+        <next>
+          <block type="controls_repeat_ext" id=":BJAN#_SBh;3tfF;Bp@@">
+            <value name="TIMES">
+              <shadow type="math_number" id="UEEjD2Nf-}UGq2ileTlT">
+                <field name="NUM">1</field>
+              </shadow>
+            </value>
+            <statement name="DO">
+              <block type="encodermotor_set_speed" id="uVNuiqR:bDP[]_K|yD88">
+                <field name="instance_name_0">TXT_M_M1_encodermotor</field>
+                <field name="direction_0">Motor.CW</field>
+                <value name="speed">
+                  <shadow type="motor_number" id=":Udy*duY%(`IXG_dYsR[">
+                    <field name="MOTOR_NUM">500</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="util_wait_for" id="B*ko:6r1!C!%ik4(cJQ_">
+                    <field name="format">s</field>
+                    <value name="value">
+                      <shadow type="math_number" id="?NO|Wf.IJ`2uga-yOL,:">
+                        <field name="NUM">2.2</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="encodermotor_stop" id="PHj?tM?@n[72g/0m?hhE">
+                        <field name="instance_name_0">TXT_M_M1_encodermotor</field>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <next>
+              <block type="servomotor_set_position" id=";`8IOj~(h(a{:/_Z:aF!">
+                <field name="instance_name">TXT_M_S2_servomotor</field>
+                <value name="position">
+                  <shadow type="servomotor_number" id="6`Ivng$d7zGl6$G;F$PF">
+                    <field name="SERVOMOTOR_NUM">250</field>
+                  </shadow>
+                  <block type="variables_get" id=";jb2*Um-.:whXs4(.)bE">
+                    <field name="VAR" id="R+iyK`sQ^`*).plwEr*5">Straight</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="[g?Pj!o-O#f.jPiL^J`L" x="-49" y="246">
+    <field name="NAME">Path1</field>
+    <statement name="STACK">
+      <block type="controls_repeat_ext" id="x(VZf-xZ/F+AX~)jZ)]+">
+        <value name="TIMES">
+          <shadow type="math_number" id="mK%$UqR5UOAZr`Txj!{m">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+        <statement name="DO">
+          <block type="encodermotor_set_speed" id="9iG-9Tmv$]nEID;;v/eL">
+            <field name="instance_name_0">TXT_M_M1_encodermotor</field>
+            <field name="direction_0">Motor.CW</field>
+            <value name="speed">
+              <shadow type="motor_number" id="3eO*WQp{kyln}x{Q`zZ~">
+                <field name="MOTOR_NUM">512</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="util_wait_for" id="W!.dAzsP/ER:0)ScvgIU">
+                <field name="format">s</field>
+                <value name="value">
+                  <shadow type="math_number" id="(BM+{$9y}!c%-9Z(kX9/">
+                    <field name="NUM">3.6</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="encodermotor_stop" id="TIgL,|at_!fsG2ulBaU|">
+                    <field name="instance_name_0">TXT_M_M1_encodermotor</field>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="0N+/76u6,CY/n-E~nQgb" x="547" y="248">
+    <field name="NAME">Path5</field>
+    <statement name="STACK">
+      <block type="controls_repeat_ext" id="oe4{2CL[(Rx#VJzha]px">
+        <value name="TIMES">
+          <shadow type="math_number" id="fDQ+Ta?.LM~(y@kk~3B}">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+        <statement name="DO">
+          <block type="encodermotor_set_speed" id="aup]qr.W-(cB8q~yNnfE">
+            <field name="instance_name_0">TXT_M_M1_encodermotor</field>
+            <field name="direction_0">Motor.CW</field>
+            <value name="speed">
+              <shadow type="motor_number" id="7^r#%~{n5OV|BEkT!*lD">
+                <field name="MOTOR_NUM">512</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="util_wait_for" id=":@g(?-pe9A)(DL/@VTmO">
+                <field name="format">s</field>
+                <value name="value">
+                  <shadow type="math_number" id="dPMnkj2fo2!P%e6-!tCK">
+                    <field name="NUM">3.9</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="encodermotor_stop" id="^cX_s*z20(eNI#s9xZh}">
+                    <field name="instance_name_0">TXT_M_M1_encodermotor</field>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id=")zJ|k0X`It%,5%5FEy_i" x="-73" y="457">
+    <field name="NAME">Path 2</field>
+    <statement name="STACK">
+      <block type="controls_repeat_ext" id="!Ei}u([U]G2r9Tw5(!Dc">
+        <value name="TIMES">
+          <shadow type="math_number" id="18::)V.2v#mb)*UG6p-d">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+        <statement name="DO">
+          <block type="encodermotor_set_speed" id=",0;oTM0hVJrafxZR[A%f">
+            <field name="instance_name_0">TXT_M_M1_encodermotor</field>
+            <field name="direction_0">Motor.CW</field>
+            <value name="speed">
+              <shadow type="motor_number" id="//!s}qzvIRxO9L#|(Ydo">
+                <field name="MOTOR_NUM">512</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="util_wait_for" id="YT-5gTkEbc=ej`7B!R6.">
+                <field name="format">s</field>
+                <value name="value">
+                  <shadow type="math_number" id="SMwG4`-k;!QBu/Jki_Re">
+                    <field name="NUM">3.45</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="encodermotor_stop" id="-@tj9CA{}Q5Nt@wLt}e]">
+                    <field name="instance_name_0">TXT_M_M1_encodermotor</field>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="%Fri+#,y[rN?PC3fs?xe" x="545" y="507">
+    <field name="NAME">Path6</field>
+    <statement name="STACK">
+      <block type="controls_repeat_ext" id="0aN0b}HJ4Vp`qk#Wx.r-">
+        <value name="TIMES">
+          <shadow type="math_number" id="RlY=AwWpWUAcUwP)z+Uh">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+        <statement name="DO">
+          <block type="encodermotor_set_speed" id="^1T_+g;m4Pz2:6g%Ahx7">
+            <field name="instance_name_0">TXT_M_M1_encodermotor</field>
+            <field name="direction_0">Motor.CW</field>
+            <value name="speed">
+              <shadow type="motor_number" id="mnii].:yI|XrvT~Z[iWJ">
+                <field name="MOTOR_NUM">512</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="util_wait_for" id="f-f[J5}p~q!0utmIV%,x">
+                <field name="format">s</field>
+                <value name="value">
+                  <shadow type="math_number" id="bVj+H^;E-t9?.b3[]2pq">
+                    <field name="NUM">3.9</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="encodermotor_stop" id="=]`e;S8#L^l5PG.NGI~/">
+                    <field name="instance_name_0">TXT_M_M1_encodermotor</field>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="[km{T2eoxQMF2MmiT|K5" x="-64" y="710">
+    <field name="NAME">Path 3</field>
+    <statement name="STACK">
+      <block type="controls_repeat_ext" id="qp##sAU6l$!-d]TM.w##">
+        <value name="TIMES">
+          <shadow type="math_number" id="cD~,FH_GbTm`i/8G)xXl">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+        <statement name="DO">
+          <block type="encodermotor_set_speed" id="b=A~zQ!g)NP-czpL:X`+">
+            <field name="instance_name_0">TXT_M_M1_encodermotor</field>
+            <field name="direction_0">Motor.CW</field>
+            <value name="speed">
+              <shadow type="motor_number" id="[792{xzgOas4QtEBc8sJ">
+                <field name="MOTOR_NUM">512</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="util_wait_for" id="YdOT/+iRev1A:YSWgiYj">
+                <field name="format">s</field>
+                <value name="value">
+                  <shadow type="math_number" id=",9h27R%7!-BD|e|;8NY1">
+                    <field name="NUM">5.2</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="encodermotor_stop" id="])r:*sNwh{m,Ac5B=Q.m">
+                    <field name="instance_name_0">TXT_M_M1_encodermotor</field>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="np7W:spm3vz@1nyQc3F6" x="-60" y="929">
+    <field name="NAME">Path 4</field>
+    <statement name="STACK">
+      <block type="controls_repeat_ext" id="lkqc!M!Cj`{B|;7hgXT1">
+        <value name="TIMES">
+          <shadow type="math_number" id="*Z.L(Mjy}9YrXx`3,TB1">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+        <statement name="DO">
+          <block type="encodermotor_set_speed" id="E.or*i`KIMOzy6e0bRJK">
+            <field name="instance_name_0">TXT_M_M1_encodermotor</field>
+            <field name="direction_0">Motor.CW</field>
+            <value name="speed">
+              <shadow type="motor_number" id=":M7Ei8.1r]Fs*;a{zf0W">
+                <field name="MOTOR_NUM">512</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="util_wait_for" id="I5Fv,4!VWr[^XN[;Ay)k">
+                <field name="format">s</field>
+                <value name="value">
+                  <shadow type="math_number" id="MzvO(ziU|7GXt,vB!wkb">
+                    <field name="NUM">3.3</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="encodermotor_stop" id="$jbJ;68$QkLjQGb_Ly)A">
+                    <field name="instance_name_0">TXT_M_M1_encodermotor</field>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="servomotor_set_position" id="MKO7Os/w*+c6*z5kr5Yz" disabled="true" x="-844" y="1746">
+    <field name="instance_name">TXT_M_S2_servomotor</field>
+    <value name="position">
+      <shadow type="servomotor_number" id="^EQ+RS^_X=_/%n`X_aPd">
+        <field name="SERVOMOTOR_NUM">260</field>
+      </shadow>
+      <block type="math_arithmetic" id="K$w#IZqj7r*,+RA2fv{U">
+        <field name="OP">MINUS</field>
+        <value name="A">
+          <block type="variables_get" id="``SIc%)IIH9lylTLr`QI">
+            <field name="VAR" id="@W`#[lPHY*bC$?VDHKkC">Turn Left</field>
+          </block>
+        </value>
+        <value name="B">
+          <block type="math_number" id="Dp~]Z6m9%uJ~B]v{#;3I">
+            <field name="NUM">20</field>
+          </block>
+        </value>
+      </block>
+    </value>
+    <next>
+      <block type="loop_endless" id="hCBPd710ryBCnM(h`Ex4" disabled="true">
+        <statement name="DO">
+          <block type="encodermotor_set_values" id="Z^]1[mxlgjglSsQM^%_o">
+            <field name="instance_name_0">TXT_M_M1_encodermotor</field>
+            <field name="direction_0">Motor.CCW</field>
+            <value name="speed">
+              <shadow type="motor_number" id="^m$eAi~*`iOmN_`iPMW[">
+                <field name="MOTOR_NUM">512</field>
+              </shadow>
+              <block type="variables_get" id="0xF%xWAXZcw9_KfcK:h`">
+                <field name="VAR" id="O+?cHK(})@4Z3CP^yQ*W">Speed</field>
+              </block>
+            </value>
+            <value name="distance">
+              <shadow type="math_number" id="JLTF*]J0.gdY^4T!}vC?">
+                <field name="NUM">450</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="util_wait_until" id="IicSNlBX:^?,LLfG:2Kw">
+                <value name="value">
+                  <block type="encodermotor_position_read" id="9?YAIq5zh0/-l@X#EJcW">
+                    <field name="instance_name">TXT_M_M1_encodermotor</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="controls_flow_statements" id="E8}Eyy*VXl5;lKk@:buN" disabled="true">
+                    <field name="FLOW">BREAK</field>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <next>
+          <block type="servomotor_set_position" id="Q0(A/OT@rL#yzA.nX4HT" disabled="true">
+            <field name="instance_name">TXT_M_S2_servomotor</field>
+            <value name="position">
+              <shadow type="servomotor_number" id="8rS|Z)$b:D1YvOdF4b=+">
+                <field name="SERVOMOTOR_NUM">160</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="loop_endless" id="JuePoKtI^=6(iPT*k33o" disabled="true">
+                <statement name="DO">
+                  <block type="encodermotor_set_values" id="TmjaCmSjV0_?.b!J8$*5">
+                    <field name="instance_name_0">TXT_M_M1_encodermotor</field>
+                    <field name="direction_0">Motor.CCW</field>
+                    <value name="speed">
+                      <shadow type="motor_number" id="~wA#by1fwH1%~#VPG+p%">
+                        <field name="MOTOR_NUM">512</field>
+                      </shadow>
+                      <block type="variables_get" id="eGCX9Z1]Jn63B865lbHk">
+                        <field name="VAR" id="O+?cHK(})@4Z3CP^yQ*W">Speed</field>
+                      </block>
+                    </value>
+                    <value name="distance">
+                      <shadow type="math_number" id="lUH/],4cDQ$|CMdq99=V">
+                        <field name="NUM">250</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="util_wait_until" id="?skPh;V;KZDVSY;-/8F$">
+                        <value name="value">
+                          <block type="encodermotor_position_read" id=")oC;#3{2.@0,8/2]iP2e">
+                            <field name="instance_name">TXT_M_M1_encodermotor</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="controls_flow_statements" id="n-,go5hT7LL_%66!7#ej" disabled="true">
+                            <field name="FLOW">BREAK</field>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+  <block type="servomotor_set_position" id="yMs6K8*-^hymsxnnGUEw" disabled="true" x="-519" y="1816">
+    <field name="instance_name">TXT_M_S2_servomotor</field>
+    <value name="position">
+      <shadow type="servomotor_number" id="4RB.Ati?oS;XPU5i|eRy">
+        <field name="SERVOMOTOR_NUM">170</field>
+      </shadow>
+    </value>
+    <next>
+      <block type="loop_endless" id="AUK5Jxn+X/+CNrt4M;Z/" disabled="true">
+        <statement name="DO">
+          <block type="encodermotor_set_values" id="vZrZPE]dU:j$%N~xIP[R">
+            <field name="instance_name_0">TXT_M_M1_encodermotor</field>
+            <field name="direction_0">Motor.CCW</field>
+            <value name="speed">
+              <shadow type="motor_number" id="}(3.R_WQpCPyT`a]%9OR">
+                <field name="MOTOR_NUM">512</field>
+              </shadow>
+              <block type="variables_get" id="A/ZW=.H)9]ip_EVj%vGZ">
+                <field name="VAR" id="O+?cHK(})@4Z3CP^yQ*W">Speed</field>
+              </block>
+            </value>
+            <value name="distance">
+              <shadow type="math_number" id="6Ws)Uudw#7(`:#kzLn+#">
+                <field name="NUM">300</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="util_wait_until" id="W%{j(m~ASMs5`!3@6TWg">
+                <value name="value">
+                  <block type="encodermotor_position_read" id="Pywm#l4wuGut3aJc6hF}">
+                    <field name="instance_name">TXT_M_M1_encodermotor</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="controls_flow_statements" id=";ZrCgQb{J|tVtV^pE?rk" disabled="true">
+                    <field name="FLOW">BREAK</field>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </next>
+  </block>
+</xml>PK
+     óYµV               lib/PK
+     óYµVÎq'ù  ù     lib/controller.pyimport fischertechnik.factories as txt_factory
+
+txt_factory.init()
+txt_factory.init_input_factory()
+txt_factory.init_motor_factory()
+txt_factory.init_servomotor_factory()
+txt_factory.init_usb_factory()
+txt_factory.init_camera_factory()
+
+TXT_M = txt_factory.controller_factory.create_graphical_controller()
+TXT_M_I2_ultrasonic_distance_meter = txt_factory.input_factory.create_ultrasonic_distance_meter(TXT_M, 2)
+TXT_M_M1_encodermotor = txt_factory.motor_factory.create_encodermotor(TXT_M, 1)
+TXT_M_S2_servomotor = txt_factory.servomotor_factory.create_servomotor(TXT_M, 2)
+TXT_M_USB1_1_camera = txt_factory.usb_factory.create_camera(TXT_M, 1)
+
+txt_factory.initialized()PK
+     óYµV®ØªÀç  ç     lib/controller.blockly<xml xmlns="https://developers.google.com/blockly/xml" version="14">
+  <block type="txt4_controller" id="d?}u=wZBWa9[Pi_eb?pn" x="197" y="-34">
+    <mutation>
+      <arg type="Input" name="Input-0" value="I2"/>
+      <arg type="Input" name="Input-1" value="-"/>
+      <arg type="Output" name="Output-0" value="-"/>
+      <arg type="Motor" name="Motor-0" value="M1"/>
+      <arg type="Motor" name="Motor-1" value="-"/>
+      <arg type="Servomotor" name="Servomotor-0" value="S2"/>
+      <arg type="Servomotor" name="Servomotor-1" value="-"/>
+      <arg type="Counter" name="Counter-0" value="-"/>
+      <arg type="I2C" name="I2C-0" value="-"/>
+      <arg type="USB" name="USB-0" value="USB1_1"/>
+      <arg type="USB" name="USB-1" value="-"/>
+    </mutation>
+    <field name="mode">0</field>
+    <field name="controller_name">TXT</field>
+    <field name="Input-0">I2</field>
+    <field name="Input-1">-</field>
+    <field name="Output-0">-</field>
+    <field name="Motor-0">M1</field>
+    <field name="Motor-1">-</field>
+    <field name="Servomotor-0">S2</field>
+    <field name="Servomotor-1">-</field>
+    <field name="Counter-0">-</field>
+    <field name="I2C-0">-</field>
+    <field name="USB-0">USB1_1</field>
+    <field name="USB-1">-</field>
+    <value name="Input-0">
+      <block type="ultrasonic_distance_meter" id="b9MyRiin5J1^jX?t_c8W"/>
+    </value>
+    <value name="Motor-0">
+      <block type="encodermotor" id="p*%Aq?$C.spO-n7aB0Cm"/>
+    </value>
+    <value name="Servomotor-0">
+      <block type="servomotor" id="jtOppjlR:Ki:~xH?l1GH"/>
+    </value>
+    <value name="USB-0">
+      <block type="camera" id="G}=`YrET]~Aq:He)JpG8"/>
+    </value>
+  </block>
+</xml>PK
+     óYµVÂ¡Î≤Ö   Ö      .project.json{"uuid":"21991132-6b3a-4933-a583-1d8ac8a576bb","name":"qualification_round_t1","mode":"ADVANCED","version":"1.0","controller":"TXT4"}PK
+     óYµVÉ€ï*  *     lib/camera.py# auto generated content from camera configuration
+from lib.controller import *
+import fischertechnik.factories as txt_factory
+
+TXT_M_USB1_1_camera.set_rotate(False)
+TXT_M_USB1_1_camera.set_height(240)
+TXT_M_USB1_1_camera.set_width(320)
+TXT_M_USB1_1_camera.set_fps(15)
+TXT_M_USB1_1_camera.start()
+
+PK
+     óYµV˙4           lib/camera.xml<xml type="camera" version="2"/>PK 
+     óYµVÏ=S@g
+  g
+                   /qualification_round_t1.pyPK 
+     óYµVe‚éo  o               ü
+  /qualification_round_t1.blocklyPK 
+     óYµV                        ﬂy  lib/PK 
+     óYµVÎq'ù  ù               z  lib/controller.pyPK 
+     óYµV®ØªÀç  ç               Õ|  lib/controller.blocklyPK 
+     óYµVÂ¡Î≤Ö   Ö                éÉ  .project.jsonPK 
+     óYµVÉ€ï*  *               >Ñ  lib/camera.pyPK 
+     óYµV˙4                     ìÖ  lib/camera.xmlPK      ¸  ﬂÖ    
