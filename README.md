@@ -1,10 +1,10 @@
 # Team Numeric
 
 Members:
-Atish Patange (coach)
-Vishwanath Suresh Kumar
-Sai Chintakula 
-Jayasiamman Prabakaran
+Atish Patange (Coach)
+; Vishwanath Suresh Kumar
+; Sai Chintakula 
+; Jayasimman Prabakaran
          
          
 # Robot Details
@@ -98,9 +98,15 @@ ToDo: Compile and Upload, what is the difference
 
 ## Qualification Round
 
-We saw that the wall will come till a patikular point so we programmed the robo to move at the boader of the mat.It works but the after for every round the angles 
-differs. 
-So we used the sonar sensor to detect the wall and to get precise angles.
+We tried multiple codes for the qualification round. We knew that there were 6 options where the robot can start from and 6 for the other direction. 
+
+- Version1 : Here we tried a code where the we measured the distances of the walls accurately. The robot just followed the code. We used a single block to go forward and increased the distance by putting it in the repeat block. But it was very inaccurate, because the values became way too high. For turning we just put the servo motor to an angle and continued using the repeat block. The code started to become very big´in length and it was very hard to correct. It was a failure so started with Version2
+
+- Version2 : We started working with variales so it's easier to correct. We stopped using the repeat block and started using Step size for the distance. With that block the code became way less. We succesfully completed 1 round, but there were a lot problems. With each turn the angle became more innacurate so we had a different angle for every turn. We knew we couldn't work like this and it would be very hard to complete 3 rounds.
+
+- Version3 : We completly delted the whole code and started new. This time, we neither did depend on the repeat block or the Step size, but we used the time. We were using functions. For each function (example for going straight or turning) we created a definition. The code became 70% less longer than before. Though the distances were percfect, we faced a new problem with angles. The same code with giving a different output. Sometimes, the angles were completly off eventhough it was the same code. So we had to start a new version.
+
+- Version4 : We are only depending on the sonar sensor to measure the distance to the wall. So if the robot comes to a specific distance, it turns 90 degrees and continues. 
             
               
 
