@@ -55,14 +55,13 @@ Solution:
 - Path Planning
 
 ## Build Process
-ToDo: Compile and Upload, what is the difference
-- How it works with Fischer Technik
+ Compiling refers to the process of converting source code into object code. On the other hand, uploading refers to transferring the compiled code (instruction set) to a processor and triggering the execution of the instructions.
 
 
 ## Team management
 - Sai Chintakula: Coding, building the Robo and editing the videos and photos
 - Jayasimman Prabakaran: Coding, helped Vishwa build the Robo
-- Vishwanath Suresh Kumar: Coding, wiki,build the Robo
+- Vishwanath Suresh Kumar: Coding, wwiki,build the Robo
 
 
 
@@ -106,7 +105,7 @@ We tried multiple codes for the qualification round. We knew that there were 6 o
 
 - Version3 : We completly delted the whole code and started new. This time, we neither did depend on the repeat block or the Step size, but we used the time. We were using functions. For each function (example for going straight or turning) we created a definition. The code became 70% less longer than before. Though the distances were percfect, we faced a new problem with angles. The same code with giving a different output. Sometimes, the angles were completly off eventhough it was the same code. So we had to start a new version.
 
-- Version4 : We are only depending on the sonar sensor to measure the distance to the wall. So if the robot comes to a specific distance, it turns 90 degrees and continues. 1
+- Version4 : We are only depending on the sonar sensor to measure the distance to the wall. So if the robot comes to a specific distance, it turns 90 degrees and continues. We created a code that when the robot detects the wall is under 60cm, it turns. But when not detected, it normally continues to go straight. But the code was a complete disaster. Because without detecting the wall itself it turned left.
             
               
 
