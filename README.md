@@ -1,7 +1,7 @@
 # Team Numeric
 
 Members:
-Atish Patange (Coach)
+Swapnil Rudrawar and Atish Patange (Coach)
 ; Vishwanath Suresh Kumar
 ; Sai Chintakula 
 ; Jayasimman Prabakaran
