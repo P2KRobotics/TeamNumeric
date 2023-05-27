@@ -2,9 +2,12 @@
 
 Members:
 Swapnil Rudrawar and Atish Patange (Coach)
-; Vishwanath Suresh Kumar
-; Sai Chintakula 
-; Jayasimman Prabakaran
+
+Vishwanath Suresh Kumar
+
+ Sai Chintakula 
+ 
+ Jayasimman Prabakaran Sowmiya 
          
          
 # Robot Details
