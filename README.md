@@ -95,9 +95,10 @@ Solution:
                 Sai updating the wiki, works on qualification round.
                 All tried to solve the problem on qualification round
               
+ - 23-05-2023: Vishwanath worked on red color signal detecting logic for final round. 
+               The code is working and commited to github
               
- 
- 
+ - 27-05-2023: Jayasimman worked on green color signal detecting logic for final round. The code is working and commited to github.
  
  
 # Our Plans
