@@ -76,10 +76,9 @@ Solution:
 - 15-04-23: Vishwa was working on the sonar senser code.
 - 22-04-23: All were working on the source code for qualification round and finshed the sonar senser code.
 - 29-04-23: All were working on the source code for qualification round.
-- 06-05-2023: 
-- Sai created the youtube channel and created the videos and photos
-- Jayasimman corrected source code for qualification round.
--  Vishwanath wrote the wiki
+- 06-05-2023: Sai created the youtube channel and created the videos and photos 
+              Jayasimman corrected source code for qualification round.
+              Vishwanath wrote the wiki
               
               
 - 13-05-2023: Vishwa changed the source code for qualification round.
