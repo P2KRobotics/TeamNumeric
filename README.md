@@ -97,6 +97,9 @@ Solution:
               
  - 23-05-2023: Vishwanath worked on red color signal detecting logic for final round. 
                The code is working and commited to github
+               
+ -25-05-2023: Vishwanath,Sai Charan and Jayasimman rebuilt the robot.
+              Vishwanath and Jayasimman worked on the Final match code.
               
  - 27-05-2023: Jayasimman worked on green color signal detecting logic for final round. The code is working and commited to github.
  
