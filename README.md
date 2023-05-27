@@ -126,4 +126,20 @@ for particular distance we set the speed (for encoder motor) and use it in combi
 Servo motor. Servo motor is used for steering mechanism. We use three different angles for steering. 160 degree for straight, 250 degree for left and 60 degree for riight. But servo motor is not precise or
 may be due to mechaniscs limitations and surface inclinations our turning angle changes. We use servo blocks from fischer technik/python to turn our servo motor left, right and center. Using that we can turn the robot. E.g. When we detect Red signal, we try to turn around.
 
+### Final Round
+#### Encoder motor
+Same working as qualifying round
 
+#### Servo motor
+Same working as qualifying round
+
+#### Camera
+We are using camera to detect signals. Our detection algorithm uses color information from signals. We used Fischer Technik's Kamera Konfiguration block to get the RGB Pixels values. The RGB pixesl
+values are then meaned over rectangle box. The rectangle box is also called as region of interest. In Fischer technik it is called as color_detector box. 
+
+We later used RGB values in our if blocks (python as well as fischer technik software) to compare whether they are greater or smaller than threshold. And there is combination of threshold and if logic
+to detect green and red signals. 
+
+Then upon detecting green color using above logic, later we wrote codes to turn our servo motor to right side, straight and then left. We did this so that robot can keep the green signal to left.
+
+Then upon detecting red, we did the same above logic but in opposite direction. We also use encoder motor to move robot forward and backward direction.
