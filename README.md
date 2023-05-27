@@ -116,11 +116,13 @@ We tried multiple codes for the qualification round. We knew that there were 6 o
             
 ## Designed Solution
 
-# Qualifying Round
+### Qualifying Round
+#### Encoder motor
 For qualifying round we are using Fischer technik robot with one encoder motor and one servo. The python or fischer technik block controls the encoder motor to move clock wise
 or anticlockwise. We use speed functionality, step size to control the encoder motor. We also use timing function to stop the encoder motor. For example in qualifying round, if we want to move straight
 for particular distance we set the speed (for encoder motor) and use it in combination with time functionality to achieve that distance.
 
+#### Servo motor
 Servo motor. Servo motor is used for steering mechanism. We use three different angles for steering. 160 degree for straight, 250 degree for left and 60 degree for riight. But servo motor is not precise or
 may be due to mechaniscs limitations and surface inclinations our turning angle changes. We use servo blocks from fischer technik/python to turn our servo motor left, right and center. Using that we can turn the robot. E.g. When we detect Red signal, we try to turn around.
 
