@@ -1,0 +1,113 @@
+import time
+
+from fischertechnik.controller.Motor import Motor
+from lib.controller import *
+
+
+Straight = None
+Speed = None
+Turn_Left = None
+
+
+def first_time():
+    global Straight, Speed, Turn_Left
+    pass
+
+
+def turn_right():
+    global Straight, Speed, Turn_Left
+    TXT_M_S2_servomotor.set_position(int(90))
+    for count10 in range(5000):
+        TXT_M_M1_encodermotor.set_speed(int(450), Motor.CW)
+        TXT_M_M1_encodermotor.start_sync()
+    TXT_M_S2_servomotor.set_position(int(250))
+    for count11 in range(4800):
+        TXT_M_M1_encodermotor.set_speed(int(450), Motor.CW)
+        TXT_M_M1_encodermotor.start_sync()
+    TXT_M_S2_servomotor.set_position(int(180))
+
+
+Straight = 160
+Turn_Left = 250
+Speed = 512
+TXT_M_S2_servomotor.set_position(int(Straight))
+for count in range(1):
+    TXT_M_M1_encodermotor.set_speed(int(Speed), Motor.CCW)
+    TXT_M_M1_encodermotor.set_distance(int(570))
+    while True:
+        if (not TXT_M_M1_encodermotor.is_running()):
+            break
+        time.sleep(0.010)
+    TXT_M_M1_encodermotor.stop_sync()
+TXT_M_S2_servomotor.set_position(int(Turn_Left))
+for count2 in range(1):
+    TXT_M_M1_encodermotor.set_speed(int(Speed), Motor.CCW)
+    TXT_M_M1_encodermotor.set_distance(int(380))
+    while True:
+        if (not TXT_M_M1_encodermotor.is_running()):
+            break
+        time.sleep(0.010)
+    break
+TXT_M_S2_servomotor.set_position(int(Straight))
+for count3 in range(1):
+    TXT_M_M1_encodermotor.set_speed(int(Speed), Motor.CCW)
+    TXT_M_M1_encodermotor.set_distance(int(540))
+    while True:
+        if (not TXT_M_M1_encodermotor.is_running()):
+            break
+        time.sleep(0.010)
+    break
+TXT_M_S2_servomotor.set_position(int(Turn_Left - 10))
+for count4 in range(1):
+    TXT_M_M1_encodermotor.set_speed(int(Speed), Motor.CCW)
+    TXT_M_M1_encodermotor.set_distance(int(450))
+    while True:
+        if (not TXT_M_M1_encodermotor.is_running()):
+            break
+        time.sleep(0.010)
+    break
+TXT_M_S2_servomotor.set_position(int(Straight))
+for count5 in range(1):
+    TXT_M_M1_encodermotor.set_speed(int(Speed), Motor.CCW)
+    TXT_M_M1_encodermotor.set_distance(int(710))
+    while True:
+        if (not TXT_M_M1_encodermotor.is_running()):
+            break
+        time.sleep(0.010)
+    break
+TXT_M_S2_servomotor.set_position(int(Turn_Left - 10))
+for count6 in range(1):
+    TXT_M_M1_encodermotor.set_speed(int(Speed), Motor.CCW)
+    TXT_M_M1_encodermotor.set_distance(int(450))
+    while True:
+        if (not TXT_M_M1_encodermotor.is_running()):
+            break
+        time.sleep(0.010)
+    break
+TXT_M_S2_servomotor.set_position(int(160))
+for count7 in range(1):
+    TXT_M_M1_encodermotor.set_speed(int(Speed), Motor.CCW)
+    TXT_M_M1_encodermotor.set_distance(int(522))
+    while True:
+        if (not TXT_M_M1_encodermotor.is_running()):
+            break
+        time.sleep(0.010)
+    break
+TXT_M_S2_servomotor.set_position(int(Turn_Left - 13))
+for count8 in range(1):
+    TXT_M_M1_encodermotor.set_speed(int(Speed), Motor.CW)
+    TXT_M_M1_encodermotor.set_distance(int(470))
+    while True:
+        if (not TXT_M_M1_encodermotor.is_running()):
+            break
+        time.sleep(0.010)
+    break
+TXT_M_S2_servomotor.set_position(int(160))
+for count9 in range(1):
+    TXT_M_M1_encodermotor.set_speed(int(Speed), Motor.CW)
+    TXT_M_M1_encodermotor.set_distance(int(200))
+    while True:
+        if (not TXT_M_M1_encodermotor.is_running()):
+            break
+        time.sleep(0.010)
+    break
