@@ -1,0 +1,103 @@
+import time
+
+from fischertechnik.controller.Motor import Motor
+from lib.controller import *
+
+
+Straight = None
+Turn_Left = None
+Speed = None
+DistanceWall = None
+
+
+def RealWait():
+    global Straight, Turn_Left, Speed, DistanceWall
+    TXT_M_M1_encodermotor.set_speed(int(0), Motor.CW)
+    TXT_M_M1_encodermotor.start_sync()
+    time.sleep(1)
+
+
+def my_90():
+    global Straight, Turn_Left, Speed, DistanceWall
+    TXT_M_S2_servomotor.set_position(int(Turn_Left))
+    for count2 in range(1):
+        TXT_M_M1_encodermotor.set_speed(int(500), Motor.CW)
+        TXT_M_M1_encodermotor.start_sync()
+        time.sleep(2.2)
+        TXT_M_M1_encodermotor.stop_sync()
+    TXT_M_S2_servomotor.set_position(int(Straight))
+
+
+def Path1():
+    global Straight, Turn_Left, Speed, DistanceWall
+    for count3 in range(1):
+        TXT_M_M1_encodermotor.set_speed(int(512), Motor.CW)
+        TXT_M_M1_encodermotor.start_sync()
+        time.sleep(3.6)
+        TXT_M_M1_encodermotor.stop_sync()
+
+
+def Path5():
+    global Straight, Turn_Left, Speed, DistanceWall
+    for count4 in range(1):
+        TXT_M_M1_encodermotor.set_speed(int(512), Motor.CW)
+        TXT_M_M1_encodermotor.start_sync()
+        time.sleep(3.9)
+        TXT_M_M1_encodermotor.stop_sync()
+
+
+def Path_2():
+    global Straight, Turn_Left, Speed, DistanceWall
+    for count5 in range(1):
+        TXT_M_M1_encodermotor.set_speed(int(512), Motor.CW)
+        TXT_M_M1_encodermotor.start_sync()
+        time.sleep(3.45)
+        TXT_M_M1_encodermotor.stop_sync()
+
+
+def Path6():
+    global Straight, Turn_Left, Speed, DistanceWall
+    for count6 in range(1):
+        TXT_M_M1_encodermotor.set_speed(int(512), Motor.CW)
+        TXT_M_M1_encodermotor.start_sync()
+        time.sleep(3.9)
+        TXT_M_M1_encodermotor.stop_sync()
+
+
+def Path_3():
+    global Straight, Turn_Left, Speed, DistanceWall
+    for count7 in range(1):
+        TXT_M_M1_encodermotor.set_speed(int(512), Motor.CW)
+        TXT_M_M1_encodermotor.start_sync()
+        time.sleep(5.2)
+        TXT_M_M1_encodermotor.stop_sync()
+
+
+def Path_4():
+    global Straight, Turn_Left, Speed, DistanceWall
+    for count8 in range(1):
+        TXT_M_M1_encodermotor.set_speed(int(512), Motor.CW)
+        TXT_M_M1_encodermotor.start_sync()
+        time.sleep(3.3)
+        TXT_M_M1_encodermotor.stop_sync()
+
+
+Straight = 160
+Turn_Left = 250
+Speed = 512
+DistanceWall = 80
+TXT_M_S2_servomotor.set_position(int(Straight))
+Path1()
+RealWait()
+my_90()
+Path_2()
+my_90()
+Path_3()
+my_90()
+Path_4()
+my_90()
+for count in range(1):
+    TXT_M_M1_encodermotor.set_speed(int(512), Motor.CW)
+    TXT_M_M1_encodermotor.start_sync()
+    time.sleep(1.3)
+    TXT_M_M1_encodermotor.stop_sync()
