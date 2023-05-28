@@ -1,0 +1,111 @@
+import time
+
+from fischertechnik.controller.Motor import Motor
+from lib.controller import *
+
+
+Straight = None
+Turn_Left = None
+Speed = None
+
+
+def my_90():
+    global Straight, Turn_Left, Speed
+    TXT_M_S2_servomotor.set_position(int(Turn_Left))
+    for count in range(1):
+        TXT_M_M1_encodermotor.set_speed(int(400), Motor.CW)
+        TXT_M_M1_encodermotor.start_sync()
+        time.sleep(2.25)
+        TXT_M_M1_encodermotor.stop_sync()
+    TXT_M_S2_servomotor.set_position(int(Straight))
+
+
+def Path_3():
+    global Straight, Turn_Left, Speed
+    for count5 in range(1):
+        TXT_M_M1_encodermotor.set_speed(int(512), Motor.CW)
+        TXT_M_M1_encodermotor.start_sync()
+        time.sleep(5.2)
+        TXT_M_M1_encodermotor.stop_sync()
+
+
+def Path_4():
+    global Straight, Turn_Left, Speed
+    for count6 in range(1):
+        TXT_M_M1_encodermotor.set_speed(int(512), Motor.CW)
+        TXT_M_M1_encodermotor.start_sync()
+        time.sleep(4)
+        TXT_M_M1_encodermotor.stop_sync()
+
+
+def Path1():
+    global Straight, Turn_Left, Speed
+    for count7 in range(1):
+        TXT_M_M1_encodermotor.set_speed(int(512), Motor.CW)
+        TXT_M_M1_encodermotor.start_sync()
+        time.sleep(3.8)
+        TXT_M_M1_encodermotor.stop_sync()
+
+
+def Path_2():
+    global Straight, Turn_Left, Speed
+    for count8 in range(1):
+        TXT_M_M1_encodermotor.set_speed(int(512), Motor.CW)
+        TXT_M_M1_encodermotor.start_sync()
+        time.sleep(3.6)
+        TXT_M_M1_encodermotor.stop_sync()
+
+
+def Turn_Left_Funktion():
+    global Straight, Turn_Left, Speed
+    TXT_M_S2_servomotor.set_position(int(Turn_Left))
+    time.sleep(2)
+    for count9 in range(1):
+        TXT_M_M1_encodermotor.set_speed(int(256), Motor.CW)
+        TXT_M_M1_encodermotor.start_sync()
+        time.sleep(4)
+        TXT_M_M1_encodermotor.stop_sync()
+    TXT_M_S2_servomotor.set_position(int(Straight))
+    time.sleep(2)
+
+
+def Path_5():
+    global Straight, Turn_Left, Speed
+    for count10 in range(1):
+        TXT_M_M1_encodermotor.set_speed(int(512), Motor.CW)
+        TXT_M_M1_encodermotor.start_sync()
+        time.sleep(4)
+        TXT_M_M1_encodermotor.stop_sync()
+
+
+Straight = 160
+Turn_Left = 250
+Speed = 512
+for count3 in range(2):
+    TXT_M_S2_servomotor.set_position(int(Straight))
+    Path1()
+    my_90()
+    Path_2()
+    my_90()
+    Path_3()
+    my_90()
+    Path_4()
+    my_90()
+    for count2 in range(1):
+        TXT_M_M1_encodermotor.set_speed(int(512), Motor.CW)
+        TXT_M_M1_encodermotor.start_sync()
+        time.sleep(1.5)
+        TXT_M_M1_encodermotor.stop_sync()
+Path1()
+my_90()
+Path_5()
+my_90()
+Path_3()
+my_90()
+Path_4()
+my_90()
+for count4 in range(1):
+    TXT_M_M1_encodermotor.set_speed(int(512), Motor.CW)
+    TXT_M_M1_encodermotor.start_sync()
+    time.sleep(1.5)
+    TXT_M_M1_encodermotor.stop_sync()
