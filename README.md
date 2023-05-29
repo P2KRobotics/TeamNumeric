@@ -74,9 +74,9 @@ Vishwanath Suresh Kumar
  - 27-05-2023: Jayasimman worked on green color signal detecting logic for final round. The code is working and commited to github.
                Jayasimman and Viswanath created the schematic Diagram.And wiki.
                Sai Charan worked on the Qualification round. 
- - 29-05-2023: Our Encoder motor gear mechanism used to transfer power to rear wheels broke down. The read wheels were not rotating properly. 
-               We rebuilt the whole robot again, opened the gear mechanism, and fixed the issue. So far robot is now moving in forward and bachward
-               direction properly. Jayasimman, Vishwanath worked on rear wheel gear mechanism. Sai is continue to work on Qualifying round code. 
+ - 29-05-2023: Our Encoder motor gear mechanism used to transfer power to rear wheels broke down. The rear wheels were not rotating properly. 
+               We rebuilt the whole robot again, opened the gear mechanism, and fixed the issue. So far robot is moving properly in forward and backward
+               direction. Jayasimman, Vishwanath worked on rear wheel gear mechanism. Sai is continue to work on Qualifying round code. 
 # Our Plans
 
 ## Qualification Round
