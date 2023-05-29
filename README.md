@@ -74,6 +74,9 @@ Vishwanath Suresh Kumar
  - 27-05-2023: Jayasimman worked on green color signal detecting logic for final round. The code is working and commited to github.
                Jayasimman and Viswanath created the schematic Diagram.And wiki.
                Sai Charan worked on the Qualification round. 
+ - 29-05-2023: Our Encoder motor gear mechanism used to transfer power to rear wheels broke down. The read wheels were not rotating properly. 
+               We rebuilt the whole robot again, opened the gear mechanism, and fixed the issue. So far robot is now moving in forward and bachward
+               direction properly. Jayasimman, Vishwanath worked on rear wheel gear mechanism. Sai is continue to work on Qualifying round code. 
 # Our Plans
 
 ## Qualification Round
@@ -102,6 +105,10 @@ for particular distance we set the speed (for encoder motor) and use it in combi
 Servo motor. Servo motor is used for steering mechanism. We use three different angles for steering. 160 degree for straight, 250 degree for left and 60 degree for riight. But servo motor is not precise or
 may be due to mechaniscs limitations and surface inclinations our turning angle changes. We use servo blocks from fischer technik/python to turn our servo motor left, right and center. Using that we can turn the robot. E.g. When we detect Red signal, we try to turn around.
 
+In below image, configuration windows for Fischertechnik robot is shown. Here we connected Sevo and encoder motors.
+
+![grafik](https://github.com/P2KRobotics/TeamNumeric/assets/118617386/b03ad2f0-7e0f-48c2-a1ac-5561b3ccefce)
+
 ### Final Round
 #### Encoder motor
 Same working as qualifying round
@@ -119,3 +126,8 @@ to detect green and red signals.
 Then upon detecting green color using above logic, later we wrote codes to turn our servo motor to right side, straight and then left. We did this so that robot can keep the green signal to left.
 
 Then upon detecting red, we did the same above logic but in opposite direction. We also use encoder motor to move robot forward and backward direction.
+
+For examle in below image we are using color detection algorithm from Fischertechnik. We are considering RGB values to detect possible red color blob in image. 
+
+![grafik](https://github.com/P2KRobotics/TeamNumeric/assets/118617386/e3cc0fa0-3124-4a26-8100-7c31f1ba5a52)
+
