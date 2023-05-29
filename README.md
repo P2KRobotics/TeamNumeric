@@ -14,7 +14,10 @@ Vishwanath Suresh Kumar
 # Robot Details
 ## Hardware Specifications Descriptions
 - Fischertechnik Robotics TXT 4.0 Base Set & Robotics Add On: Autonomus Driving.
-- Coding Software: ROBO Pro Coding Software
+- Coding Software: ROBO Pro Coding Software. We can program the robot both in logical blocks and python. Below image is the sample code written to detect red color ball.
+
+![grafik](https://github.com/P2KRobotics/TeamNumeric/assets/118617386/5035cbd8-cecb-4b4f-b24e-d0bb0329fc91)
+
 ## Driving mechanism
  -  Steering mechanism with 4 wheels
  -  Two wheels at the back connect with one Encoder motor (for forwards and backwards)
