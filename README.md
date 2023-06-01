@@ -120,7 +120,7 @@ Same working as qualifying round
 Same working as qualifying round
 
 #### Camera
-We are using camera to detect signals. Our detection algorithm uses color information from signals. We used Fischer Technik's Kamera Konfiguration block to get the RGB Pixels values. The RGB pixesl
+We are using camera to detect signals. Our detection algorithm uses color information from signals. We used Fischer Technik's camera configuration block to get the RGB Pixels values. The RGB pixesl
 values are then meaned over rectangle box. The rectangle box is also called as region of interest. In Fischer technik it is called as color_detector box. 
 
 We later used RGB values in our if blocks (python as well as fischer technik software) to compare whether they are greater or smaller than threshold. And there is combination of threshold and if logic
