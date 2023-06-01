@@ -1,0 +1,90 @@
+import time
+
+from fischertechnik.controller.Motor import Motor
+from lib.camera import *
+from lib.controller import *
+
+
+time2 = None
+angle_straight = None
+sense = None
+r = None
+red = None
+g = None
+green = None
+b = None
+blue = None
+
+
+def move_backwards(time2):
+    global angle_straight, sense, r, red, g, green, b, blue
+    TXT_M_M1_encodermotor.set_speed(int(400), Motor.CCW)
+    TXT_M_M1_encodermotor.start_sync()
+    time.sleep(time2)
+
+
+def move_front(time2):
+    global angle_straight, sense, r, red, g, green, b, blue
+    TXT_M_M1_encodermotor.set_speed(int(400), Motor.CW)
+    TXT_M_M1_encodermotor.start_sync()
+    time.sleep(time2)
+
+
+def color_callback(event):
+    global time2, angle_straight, sense, r, red, g, green, b, blue
+    r = event.value.get_rgb_red()
+    g = event.value.get_rgb_green()
+    b = event.value.get_rgb_blue()
+
+
+def color_callback2(event):
+    global time2, angle_straight, sense, r, red, g, green, b, blue
+    red = event.value.get_rgb_red()
+    green = event.value.get_rgb_green()
+    blue = event.value.get_rgb_blue()
+
+
+def real_wait(time2):
+    global angle_straight, sense, r, red, g, green, b, blue
+    TXT_M_M1_encodermotor.set_speed(int(0), Motor.CW)
+    TXT_M_M1_encodermotor.start_sync()
+    time.sleep(time2)
+
+
+color_detector.add_detection_listener(color_callback)
+color_detector2.add_detection_listener(color_callback2)
+
+
+r = 0
+g = 0
+b = 0
+red = 0
+green = 0
+blue = 0
+green = 0
+angle_straight = 158
+sense = 1
+TXT_M_S2_servomotor.set_position(int(160))
+real_wait(1)
+while True:
+    if sense == 1 and red > 100 and green < 70 and blue < 70:
+        sense = 2
+        TXT_M_S2_servomotor.set_position(int(250))
+        move_backwards(1)
+        TXT_M_S2_servomotor.set_position(int(angle_straight))
+        move_front(2.5)
+        TXT_M_S2_servomotor.set_position(int(260))
+        move_front(0.5)
+        TXT_M_S2_servomotor.set_position(int(angle_straight))
+    else:
+        TXT_M_M1_encodermotor.stop_sync()
+    if sense == 2:
+        sense = 1
+        while not (TXT_M_I2_ultrasonic_distance_meter.get_distance() <= 20):
+            move_front(1)
+        if TXT_M_I2_ultrasonic_distance_meter.get_distance() <= 15:
+            move_backwards(2.3)
+            TXT_M_S2_servomotor.set_position(int(260))
+            move_front(2.5)
+            TXT_M_S2_servomotor.set_position(int(angle_straight))
+            move_front(0.5)
