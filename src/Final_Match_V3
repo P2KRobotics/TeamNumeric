@@ -1,0 +1,224 @@
+import time
+
+from fischertechnik.controller.Motor import Motor
+from lib.camera import *
+from lib.controller import *
+
+
+angle_straight = None
+time2 = None
+r = None
+red = None
+g = None
+sense = None
+green = None
+b = None
+blue = None
+
+
+def Path1Red2():
+    global angle_straight, time2, r, red, g, sense, green, b, blue
+    TXT_M_S2_servomotor.set_position(int(40))
+    move_front(1.5)
+    TXT_M_S2_servomotor.set_position(int(280))
+    move_front(1.8)
+    TXT_M_S2_servomotor.set_position(int(angle_straight))
+    move_front(3)
+    sense = 5
+
+
+def Path1Red():
+    global angle_straight, time2, r, red, g, sense, green, b, blue
+    TXT_M_S2_servomotor.set_position(int(40))
+    move_front(1.5)
+    TXT_M_S2_servomotor.set_position(int(280))
+    move_front(1.8)
+    TXT_M_S2_servomotor.set_position(int(angle_straight))
+    move_front(3)
+    sense = 5
+
+
+def Path1Green2():
+    global angle_straight, time2, r, red, g, sense, green, b, blue
+    TXT_M_S2_servomotor.set_position(int(60))
+    move_backwards(1)
+    TXT_M_S2_servomotor.set_position(int(160))
+    move_front(2.4)
+    TXT_M_S2_servomotor.set_position(int(60))
+    move_front(2.5)
+    TXT_M_S2_servomotor.set_position(int(260))
+    move_front(2.2)
+    sense = 2
+
+
+def Path1Green():
+    global angle_straight, time2, r, red, g, sense, green, b, blue
+    TXT_M_S2_servomotor.set_position(int(280))
+    move_front(1.6)
+    TXT_M_S2_servomotor.set_position(int(40))
+    move_front(3)
+    TXT_M_S2_servomotor.set_position(int(280))
+    move_front(2)
+    TXT_M_S2_servomotor.set_position(int(angle_straight))
+    move_front(2.2)
+    sense = 2
+
+
+def Path2Red2():
+    global angle_straight, time2, r, red, g, sense, green, b, blue
+    TXT_M_S2_servomotor.set_position(int(280))
+    move_backwards(1.2)
+    TXT_M_S2_servomotor.set_position(int(angle_straight))
+    move_front(2.8)
+    TXT_M_S2_servomotor.set_position(int(280))
+    move_front(3)
+    TXT_M_S2_servomotor.set_position(int(65))
+    move_front(1.6)
+    TXT_M_S2_servomotor.set_position(int(angle_straight))
+    move_front(1)
+    sense = 4
+
+
+def SonarSensorGreen():
+    global angle_straight, time2, r, red, g, sense, green, b, blue
+    TXT_M_S2_servomotor.set_position(int(160))
+    move_backwards(1.5)
+    TXT_M_S2_servomotor.set_position(int(280))
+    move_front(2.8)
+    TXT_M_S2_servomotor.set_position(int(150))
+    move_backwards(1)
+    sense = 3
+
+
+def Path2Red():
+    global angle_straight, time2, r, red, g, sense, green, b, blue
+    TXT_M_S2_servomotor.set_position(int(280))
+    move_backwards(1)
+    TXT_M_S2_servomotor.set_position(int(angle_straight))
+    move_front(2.5)
+    TXT_M_S2_servomotor.set_position(int(280))
+    move_front(2.5)
+    TXT_M_S2_servomotor.set_position(int(65))
+    move_front(1.6)
+    TXT_M_S2_servomotor.set_position(int(170))
+    move_front(0.3)
+    sense = 4
+
+
+def SonarSensorRed():
+    global angle_straight, time2, r, red, g, sense, green, b, blue
+    TXT_M_S2_servomotor.set_position(int(160))
+    move_backwards(1.3)
+    TXT_M_S2_servomotor.set_position(int(270))
+    move_front(2.1)
+    TXT_M_S2_servomotor.set_position(int(160))
+    move_front(2.2)
+    sense = 3
+
+
+def Path2Green():
+    global angle_straight, time2, r, red, g, sense, green, b, blue
+    pass
+
+
+def Path2Green2():
+    global angle_straight, time2, r, red, g, sense, green, b, blue
+    TXT_M_S2_servomotor.set_position(int(40))
+    move_backwards(1.2)
+    TXT_M_S2_servomotor.set_position(int(angle_straight))
+    move_front(2.8)
+    TXT_M_S2_servomotor.set_position(int(40))
+    move_front(3)
+    TXT_M_S2_servomotor.set_position(int(265))
+    move_front(2.1)
+    TXT_M_S2_servomotor.set_position(int(angle_straight))
+    move_front(0.5)
+    TXT_M_S2_servomotor.set_position(int(150))
+    move_backwards(0.9)
+    sense = 4
+
+
+def color_callback(event):
+    global angle_straight, time2, r, red, g, sense, green, b, blue
+    red = event.value.get_rgb_red()
+    green = event.value.get_rgb_green()
+    blue = event.value.get_rgb_blue()
+
+
+def color_callback2(event):
+    global angle_straight, time2, r, red, g, sense, green, b, blue
+    r = event.value.get_rgb_red()
+    g = event.value.get_rgb_green()
+    b = event.value.get_rgb_blue()
+
+
+def move_backwards(time2):
+    global angle_straight, r, red, g, sense, green, b, blue
+    TXT_M_M1_encodermotor.set_speed(int(400), Motor.CW)
+    TXT_M_M1_encodermotor.start_sync()
+    time.sleep(time2)
+
+
+def real_wait(time2):
+    global angle_straight, r, red, g, sense, green, b, blue
+    TXT_M_M1_encodermotor.set_speed(int(0), Motor.CW)
+    TXT_M_M1_encodermotor.start_sync()
+    time.sleep(time2)
+
+
+def move_front(time2):
+    global angle_straight, r, red, g, sense, green, b, blue
+    TXT_M_M1_encodermotor.set_speed(int(400), Motor.CCW)
+    TXT_M_M1_encodermotor.start_sync()
+    time.sleep(time2)
+
+
+color_detector2.add_detection_listener(color_callback)
+color_detector.add_detection_listener(color_callback2)
+
+
+r = 0
+g = 0
+b = 0
+red = 0
+green = 0
+blue = 0
+green = 0
+angle_straight = 150
+sense = 1
+TXT_M_S2_servomotor.set_position(int(160))
+while True:
+    if sense == 1 and red > 100 and green < 100 and blue < 100:
+        Path1Red2()
+    elif sense == 1 and r > 100 and g < 100 and b < 100:
+        Path1Red()
+    elif sense == 1 and g > 100 and b < 100 and r < 100:
+        Path1Green()
+    elif sense == 1 and green > 100 and blue < 100 and red < 100:
+        Path1Green2()
+    else:
+        TXT_M_S2_servomotor.set_position(int(150))
+    if sense == 5:
+        while not (TXT_M_I2_ultrasonic_distance_meter.get_distance() <= 30):
+            TXT_M_S2_servomotor.set_position(int(153))
+            move_front(1)
+        if TXT_M_I2_ultrasonic_distance_meter.get_distance() <= 30:
+            SonarSensorRed()
+    if sense == 2:
+        while not (TXT_M_I2_ultrasonic_distance_meter.get_distance() <= 30):
+            TXT_M_S2_servomotor.set_position(int(153))
+            move_front(1)
+        if TXT_M_I2_ultrasonic_distance_meter.get_distance() <= 30:
+            SonarSensorGreen()
+    if sense == 3 and red > 100 and green < 100 and blue < 100:
+        Path2Red2()
+    elif sense == 3 and r > 100 and g < 70 and b < 70:
+        Path2Red()
+    elif sense == 3 and g > 150 and b < 150 and r < 150:
+        Path2Green2()
+    elif sense == 3 and green > 150 and blue < 150 and red < 150:
+        Path2Green()
+    else:
+        TXT_M_M1_encodermotor.coast()
+
+
