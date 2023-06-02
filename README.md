@@ -134,3 +134,9 @@ For examle in below image we are using color detection algorithm from Fischertec
 
 ![grafik](https://github.com/P2KRobotics/TeamNumeric/assets/118617386/e3cc0fa0-3124-4a26-8100-7c31f1ba5a52)
 
+
+### Final Match Idea :
+
+We used the camera to sense the color of the signal Red and green. And used the sonar sensor to turn precisly and to avoid the walls.  We use two colordetector for the two different positions where the signal could be. The detector are placed in the middle of the mat. So that the other signals can also be detected. And blocked the gaps so the camera will not give wrong readings. After the first color, we could have programmed the robot so that it directly goes to the next block. But we insisted, because if we use the sonar sensor the code will be much shorter. We have multiple color detectors, one for green and one for red.   
+![IMG_0865](https://github.com/P2KRobotics/TeamNumeric/assets/118617386/a9608f1b-7b33-4d81-9285-3ee3f269748a)
+![IMG_0864](https://github.com/P2KRobotics/TeamNumeric/assets/118617386/84aef856-7db3-4475-8270-87c3387ce4dd)
