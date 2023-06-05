@@ -16,8 +16,6 @@ Vishwanath Suresh Kumar
 - Fischertechnik Robotics TXT 4.0 Base Set & Robotics Add On: Autonomus Driving.
 - Coding Software: ROBO Pro Coding Software. We can program the robot both in logical blocks and python. Below image is the sample code written to detect red color ball.
 
-![grafik](https://github.com/P2KRobotics/TeamNumeric/assets/118617386/5035cbd8-cecb-4b4f-b24e-d0bb0329fc91)
-
 ## Driving mechanism
  -  Steering mechanism with 4 wheels
  -  Two wheels at the back connect with one Encoder motor (for forwards and backwards)
@@ -110,7 +108,6 @@ may be due to mechaniscs limitations and surface inclinations our turning angle 
 
 In below image, configuration windows for Fischertechnik robot is shown. Here we connected Sevo and encoder motors.
 
-![grafik](https://github.com/P2KRobotics/TeamNumeric/assets/118617386/b03ad2f0-7e0f-48c2-a1ac-5561b3ccefce)
 
 ### Final Round
 #### Encoder motor
@@ -132,11 +129,27 @@ Then upon detecting red, we did the same above logic but in opposite direction. 
 
 For examle in below image we are using color detection algorithm from Fischertechnik. We are considering RGB values to detect possible red color blob in image. 
 
-![grafik](https://github.com/P2KRobotics/TeamNumeric/assets/118617386/e3cc0fa0-3124-4a26-8100-7c31f1ba5a52)
 
 
 ### Final Match Idea :
 
 We used the camera to sense the color of the signal Red and green. And used the sonar sensor to turn precisly and to avoid the walls.  We use two colordetector for the two different positions where the signal could be. The detector are placed in the middle of the mat. So that the other signals can also be detected. And blocked the gaps so the camera will not give wrong readings. After the first color, we could have programmed the robot so that it directly goes to the next block. But we insisted, because if we use the sonar sensor the code will be much shorter. We have multiple color detectors, one for green and one for red.   
-![IMG_0865](https://github.com/P2KRobotics/TeamNumeric/assets/118617386/a9608f1b-7b33-4d81-9285-3ee3f269748a)
-![IMG_0864](https://github.com/P2KRobotics/TeamNumeric/assets/118617386/84aef856-7db3-4475-8270-87c3387ce4dd)
+
+### New Robot
+
+We switch for Fischer Technik to Spike Prime because the Endcoder motor is carcking, the output of the code is different,the value of our code changed, the software for fischer Technik bugged. We used Spike Prime last year in Robosport Germany Finals so we got a lot experience in SPike Prime. There are two types of motor the medium motor and a large motor.
+
+
+![middle-motor-spike-prime](https://github.com/P2KRobotics/TeamNumeric/assets/118617386/d339b188-871e-4d4b-b502-dc4f910f147d)
+
+#### middle motor
+
+
+![2549565](https://github.com/P2KRobotics/TeamNumeric/assets/118617386/121fb834-2f5b-4a47-b63b-f780ceb935b0)
+
+
+#### large motor 
+
+
+
+
