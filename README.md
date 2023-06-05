@@ -4,10 +4,10 @@ Members:
 
 Swapnil Rudrawar and Atish Patange (Coach)
 
+ Sai Charan Chintakula
+ 
 Vishwanath Suresh Kumar
 
- Sai Chintakula 
- 
  Jayasimman Prabakaran Sowmiya 
          
          
