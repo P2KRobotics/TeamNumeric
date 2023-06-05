@@ -137,7 +137,7 @@ We used the camera to sense the color of the signal Red and green. And used the 
 
 ### New Robot
 
-We switch for Fischer Technik to Spike Prime because the Endcoder motor is carcking, the output of the code is different,the value of our code changed, the software for fischer Technik bugged. We used Spike Prime last year in Robosport Germany Finals so we got a lot experience in SPike Prime. There are two types of motor the medium motor and a large motor.
+We switch for Fischer Technik to Spike Prime because the Endcoder motor is carcking, the output of the code is different,the value of our code changed, the software for fischer Technik bugged. We used Spike Prime last year in Robosport Germany Finals so we got a lot experience in SPike Prime. There are two types of motor in spike prime the medium motor and a large motor. We use the middle motor for moving front and back. And large motor as the servo motor.
 
 
 ![middle-motor-spike-prime](https://github.com/P2KRobotics/TeamNumeric/assets/118617386/d339b188-871e-4d4b-b502-dc4f910f147d)
@@ -149,6 +149,7 @@ We switch for Fischer Technik to Spike Prime because the Endcoder motor is carck
 
 
 #### large motor 
+
 
 
 
