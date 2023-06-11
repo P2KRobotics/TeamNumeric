@@ -1,0 +1,9 @@
+ Usage of Functions and Variables
+ 
+We created functions to make our code more understandable and clear. First we defined the function, then we put it inside the main code.
+ For instance : SetStraight, MoveStraightFor, MoveBackFor, TurnLeft, TurnRight, WaitFor. 
+After using functions, you instantly know the mistake, which makes the process much easier. 
+
+We used variables for Speed, SetStraight and Distance, because once we inserted it in the main code, we can simply change the values. 
+First we need to set the value of the variable and then insert it. 
+For example if we wanted to change the distance we simply change set the value and everywhere where it was put.
