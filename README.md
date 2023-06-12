@@ -78,6 +78,8 @@ Vishwanath Suresh Kumar
  - 29-05-2023: Our Encoder motor gear mechanism used to transfer power to rear wheels broke down. The rear wheels were not rotating properly. 
                We rebuilt the whole robot again, opened the gear mechanism, and fixed the issue. So far robot is moving properly in forward and backward
                direction. Jayasimman, Vishwanath worked on rear wheel gear mechanism. Sai is continue to work on Qualifying round code. 
+	       
+	       
 # Our Plans
 
 ## Qualification Round
