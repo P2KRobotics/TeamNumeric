@@ -148,3 +148,4 @@ So why face problems we never faced?  We decided to revert back to TXT 4.0!
 
 
 
+![_MG_9568 00_00_07_21 Still002(1)](https://github.com/P2KRobotics/TeamNumeric/assets/118617386/40d2d9da-7a62-4583-b3c3-b0020799171e)
