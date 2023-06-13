@@ -1,0 +1,88 @@
+import time
+
+from fischertechnik.controller.Motor import Motor
+from lib.controller import *
+
+
+time2 = None
+repeat = None
+straight = None
+turn_left = None
+
+
+def wait(time2):
+    global repeat, straight, turn_left
+    TXT_M_M1_encodermotor.set_speed(int(0), Motor.CCW)
+    TXT_M_M1_encodermotor.start_sync()
+    time.sleep(time2)
+
+
+def move_front(time2):
+    global repeat, straight, turn_left
+    TXT_M_M1_encodermotor.set_speed(int(400), Motor.CCW)
+    TXT_M_M1_encodermotor.start_sync()
+    time.sleep(time2)
+
+
+def move_back(time2):
+    global repeat, straight, turn_left
+    TXT_M_M1_encodermotor.set_speed(int(400), Motor.CW)
+    TXT_M_M1_encodermotor.start_sync()
+    time.sleep(time2)
+
+
+repeat = 1
+straight = 160
+turn_left = 260
+TXT_M_S2_servomotor.set_position(int(160))
+TXT_M_S2_servomotor.set_position(int(60))
+move_front(1.2)
+TXT_M_S2_servomotor.set_position(int(240))
+move_front(2)
+while True:
+    if (TXT_M_I3_ultrasonic_distance_meter.get_distance() <= 30) and repeat == 1:
+        TXT_M_S2_servomotor.set_position(int(160))
+        wait(1)
+        move_back(1.3)
+        TXT_M_S2_servomotor.set_position(int(turn_left))
+        move_front(2)
+        repeat = 2
+    else:
+        while not (TXT_M_I3_ultrasonic_distance_meter.get_distance() <= 30):
+            TXT_M_S2_servomotor.set_position(int(straight))
+            move_front(1)
+    if (TXT_M_I3_ultrasonic_distance_meter.get_distance() <= 30) and repeat == 2:
+        TXT_M_S2_servomotor.set_position(int(160))
+        wait(1)
+        move_back(1)
+        TXT_M_S2_servomotor.set_position(int(turn_left))
+        move_front(2.1)
+        repeat = 3
+    else:
+        while not (TXT_M_I3_ultrasonic_distance_meter.get_distance() <= 30):
+            TXT_M_S2_servomotor.set_position(int(straight))
+            move_front(1)
+    if (TXT_M_I3_ultrasonic_distance_meter.get_distance() <= 30) and repeat == 3:
+        TXT_M_S2_servomotor.set_position(int(160))
+        wait(1)
+        move_back(0.8)
+        TXT_M_S2_servomotor.set_position(int(turn_left))
+        move_front(2)
+        repeat = 4
+    else:
+        while not (TXT_M_I3_ultrasonic_distance_meter.get_distance() <= 30):
+            TXT_M_S2_servomotor.set_position(int(straight))
+            move_front(1)
+    if (TXT_M_I3_ultrasonic_distance_meter.get_distance() <= 30) and repeat == 4:
+        TXT_M_S2_servomotor.set_position(int(160))
+        wait(1)
+        move_back(1.6)
+        TXT_M_S2_servomotor.set_position(int(turn_left))
+        move_front(2)
+        repeat = 1
+    else:
+        while not (TXT_M_I3_ultrasonic_distance_meter.get_distance() <= 30):
+            TXT_M_S2_servomotor.set_position(int(straight))
+            move_front(1)
+
+
