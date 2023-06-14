@@ -34,6 +34,8 @@ Members:
 - Sensor Fusion: 
   Sensor Fusion is a combination of Sensors. We may use the combination of camera and sonar sensor.
 
+  Sensor Fusion is a combination of Sensors. We may use the combination of camera and sonar sensor.
+
 ## Build Process
  Compiling refers to the process of converting source code into object code. On the other hand, uploading refers to transferring the compiled code (instruction set) to a processor and triggering the execution of the instructions.
 
@@ -75,9 +77,20 @@ Members:
  - 27-05-2023: Jayasimman worked on green color signal detecting logic for final round. The code is working and commited to github.
                Jayasimman and Viswanath created the schematic Diagram.And wiki.
                Sai Charan worked on the Qualification round. 
+	       
  - 29-05-2023: Our Encoder motor gear mechanism used to transfer power to rear wheels broke down. The rear wheels were not rotating properly. 
                We rebuilt the whole robot again, opened the gear mechanism, and fixed the issue. So far robot is moving properly in forward and backward
-               direction. Jayasimman, Vishwanath worked on rear wheel gear mechanism. Sai is continue to work on Qualifying round code. 
+               direction. Jayasimman, Vishwanath worked on rear wheel gear mechanism. Sai is continue to work on Qualifying round code.
+	       
+  - 30-05-2023: All were working on the Final Match.
+   
+  -  31-05-2023: All went through the rules, made final changes for the regional competion in Rüsselsheim.
+  
+  -  05-06-2023: We had an idea to work with Spike Prime, because of our experience in Wro 2022 Deutschland-Finale Robosport.And the success of an other team. 
+                 We build our robot in Spike prime. We had many problems
+  
+  -  07-06-2023: We came back to Fischer Technik
+
 	       
 	       
 # Our Plans
