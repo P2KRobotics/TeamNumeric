@@ -150,15 +150,12 @@ For examle in below image we are using color detection algorithm from Fischertec
 
 We used the camera to sense the color of the signal Red and green. And used the sonar sensor to turn precisly and to avoid the walls.  We use two colordetector for the two different positions where the signal could be. The detector are placed in the middle of the mat. So that the other signals can also be detected. And blocked the gaps so the camera will not give wrong readings. After the first color, we could have programmed the robot so that it directly goes to the next block. But we insisted, because if we use the sonar sensor the code will be much shorter. We have multiple color detectors, one for green and one for red.   
 
-### Spike Prime
+### Spontaneous change of Hardware
 After finishing the WRO on a regional level, we came to the decision to switch our robot to Spike Prime. Because we already worked woth Spike Prime last year in Robosports, we thought it would be easier. We did our own design with one encoder motor, servo motor and 3 sonar sensors. We completly tried 3 combinations.
 	-	Try1 (5th June): We first used one sonar sensor in the front. Because now the software changed, other blocks need to be used. We used the blocks •when• for detecting the wall and then turning.  But we faced the same problems as with TXT 4.0: the robot was gradually increasing the angles. We only wanted to concentrate on the qualification rounds first. One thing we noticed was that Spike Prime took less rotations to reach the same position as with TXT 4.0.
 	-	Try2: We used two sonar sensors: an additional one on the left. We programmed so that when the side sensor detects something closer than 5 cm, it should gradually turn to the right. The first round was fine, but entering the second round the robot crashed the right wall. 
 	-	Try3: Now we had 3 sonar sensors. Just so that the right sensor when detected gradually moves left. We thought eventually it will just move in the middle, but we were wrong. In spike prime 3 we had the problem that the code was getting finished to the end. So if the side sensors detected something and short after the wall in the front was closer, the robot finished the code of the side sensors, so it crashed to the wall. And it kept on getting disoriented. Because we only had one encoder motor, the robot was overall unstable. The pieces of the robot randomly kept falling apart in the middle of the round. 
 So why face problems we never faced?  We decided to revert back to TXT 4.0!
 
-
-
-
-
 ![_MG_9568 00_00_07_21 Still002(1)](https://github.com/P2KRobotics/TeamNumeric/assets/118617386/40d2d9da-7a62-4583-b3c3-b0020799171e)
+![schematic diagram Spike Prime](https://github.com/P2KRobotics/TeamNumeric/assets/118617386/e3bfa46a-e829-427a-97a3-934ee4d67bb8)
