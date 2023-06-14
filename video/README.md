@@ -1,6 +1,8 @@
 # Qualification Round
 https://youtu.be/oVlGD3stFyQ
 
+https://www.youtube.com/watch?v=52yFrAqjbY0
+
 # Infomation about our team 
 https://www.youtube.com/watch?v=E0wkcVpt9K4
 
