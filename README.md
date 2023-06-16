@@ -85,13 +85,21 @@ Members:
   - 30-05-2023: All were working on the Final Match.
    
   -  31-05-2023: All went through the rules, made final changes for the regional competion in Rüsselsheim.
-  
-  -  05-06-2023: We had an idea to work with Spike Prime, because of our experience in Wro 2022 Deutschland-Finale Robosport.And the success of an other team. 
-                 We build our robot in Spike prime. We had many problems
-  
-  -  07-06-2023: We came back to Fischer Technik
-
-	       
+ 
+ - 01-06-2023: After facing problems with Fishertechnik TXT4.0 in the regional competition in Rüsselsheim, we decided to change our robot. Last year we worked with Spike Prime at Robosports, so that was our best option.
+ - 02-06-2023:
+We assembled our Spike Prime robot. We faces an issue: Because we are only allowed to use one encoder motor, the robot was very unstable. The whole day we tried to figure a stable structure
+- 03-06-2023:
+We started coding with Spike Prime Legacy. We realised that the code for the qualification round is much shorter than it was with RoboProCoding. We finished our code, but we had a problem we never had before: The robot was so unstable that the wheels broke off in the middle of the match, multiple times. Eventhough the code was stable, the robot wasn't. So we gad no other option than to revert back to our Fishertechnik TXT4.0. 
+-04-06-2023:
+Today something happened that never happened before: The robot didnt crack. Suddenly the robot was very stable. We came back to our old codes and started working on the qualification rounds for clockwise and anti-clockwise
+  -  05-06-2023: We worked on the final round. We changed the code completly. The reason was that the code that we wrote before didnt work at Rüsslesheim was because we had specific RGB values. In Rüsslesheim the temperature was different. So now we created a very simple and new logic. If R>G & R>B then do the positions. 
+  -  08-06-2023: 
+Abd it worked! So we continued fir every other position. But because the positons were different now we needed to do new positions for every condition. This process is the most time consuming. 
+-9-06-2023:
+We continued doinf the positions.
+-10-06-2023:
+Today was the last day we could work, because our school starts from next week. We tried to finish as much as possible and stopped for today.       
 	       
 # Our Plans
 
