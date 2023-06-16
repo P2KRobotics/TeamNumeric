@@ -96,9 +96,9 @@ Today something happened that never happened before: The robot didnt crack. Sudd
   -  05-06-2023: We worked on the final round. We changed the code completly. The reason was that the code that we wrote before didnt work at Rüsslesheim was because we had specific RGB values. In Rüsslesheim the temperature was different. So now we created a very simple and new logic. If R>G & R>B then do the positions. 
   -  08-06-2023: 
 Abd it worked! So we continued fir every other position. But because the positons were different now we needed to do new positions for every condition. This process is the most time consuming. 
--9-06-2023:
+  - 9-06-2023:
 We continued doinf the positions.
--10-06-2023:
+ - 10-06-2023:
 Today was the last day we could work, because our school starts from next week. We tried to finish as much as possible and stopped for today.       
 	       
 # Our Plans
